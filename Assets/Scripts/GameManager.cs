@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance; //SINGLETON part1
     public Character character; //Variable del personaje 
+    public Sprite arponeroIMG;
     private int life;
     private string selectName;
 
@@ -42,7 +43,7 @@ public class GameManager : MonoBehaviour
         }
         else if(value == 2) // si es 2 un arponero 
         {
-            character = new Arponero(selectName);
+            character = new Arponero(selectName,arponeroIMG);
         }
     }
 

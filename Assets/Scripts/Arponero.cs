@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Arponero : Character
 {
-    public Arponero(string name) : base(name, 20, Resources.Load<Sprite>("Sprite/Arponero"))
+    public Arponero(string name, Sprite img) : base(name, 20, img)
     {
 
     }
