@@ -32,13 +32,17 @@ public class GameManager : MonoBehaviour
     public void SelectCharacter(int value) // para seleccionar el personaje
     {
        
-        if (value == 0) // si es 1 se crea cowboy
+        if (value == 0) // si es 0 se crea cowboy
         {
             character = new Cowboy(selectName);
         }
-        else if (value == 1) // si es 2 el wizard
+        else if (value == 1) // si es 1 el wizard
         {
             character = new Wizard(2f, selectName);
+        }
+        else if(value == 2) // si es 2 un arponero 
+        {
+            character = new Arponero(selectName);
         }
     }
 
