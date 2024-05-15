@@ -2,22 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Arponero : Character
+public class Pistolero : Character
 {
-    public Arponero(string name, Sprite img) : base(name, 22, img)
+    public Pistolero(string name, Sprite img) : base(name, 35, img)
     {
 
     }
     public override float Heal()
     {
-        Debug.Log("El Arponero se cura");
-        health += 22;
+        Debug.Log("El Pistolero se cura");
+        health += 15;
         base.Heal();
-        return 22;
+        return 15;
     }
     public override float Attack()
     {
-        Debug.Log("El Arponero ataca " );
+        Debug.Log("El Pistolero ataca ");
         return Random.Range(damage, damage * 2.2f);
     }
+
 }
